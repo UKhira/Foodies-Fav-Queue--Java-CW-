@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="604.0" style="-fx-background-color: wheat;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gui.task_4.UIController">
+    <children>
+        <Text layoutX="57.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="Foodies Fave Food Center" wrappingWidth="496.109375">
+            <font>
+                <Font size="40.0" />
+            </font>
+            <fill>
+                <LinearGradient endX="1.0" endY="1.0">
+                    <stops>
+                        <Stop>
+                            <color>
+                                <Color red="0.5263158082962036" green="0.1461988240480423" blue="0.26023390889167786" />
+                            </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                            <color>
+                                <Color red="0.6030397415161133" green="0.5464181303977966" blue="0.8552631735801697" />
+                            </color>
+                        </Stop>
+                    </stops>
+                </LinearGradient>
+            </fill>
+            <stroke>
+                <LinearGradient endX="1.0" endY="1.0">
+                    <stops>
+                        <Stop>
+                            <color>
+                                <Color red="0.5263158082962036" green="0.1461988240480423" blue="0.26023390889167786" />
+                            </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                            <color>
+                                <Color red="0.19200000166893005" green="0.22697143256664276" blue="0.30000001192092896" />
+                            </color>
+                        </Stop>
+                    </stops>
+                </LinearGradient>
+            </stroke>
+        </Text>
+        <Text layoutX="33.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cashier 1">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Text>
+        <Text layoutX="150.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cashier 2" wrappingWidth="81.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Text>
+        <Text layoutX="261.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cashier 3">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Text>
+        <ScrollPane layoutX="353.0" layoutY="64.0" prefHeight="434.0" prefWidth="251.0">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="433.0" prefWidth="249.0">
+                    <children>
+                        <ImageView fitHeight="78.0" fitWidth="107.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@burger.png" />
+                            </image>
+                        </ImageView>
+                        <Text layoutX="97.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="In Stock:" wrappingWidth="114.0">
+                            <font>
+                                <Font name="Serif Regular" size="25.0" />
+                            </font>
+                        </Text>
+                  <Label fx:id="stock" layoutX="106.0" layoutY="39.0" text="50">
+                     <font>
+                        <Font name="System Bold Italic" size="42.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="39.0" layoutY="101.0" prefHeight="31.0" prefWidth="143.0" text="Waiting Queue">
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0" startX="0.5924170616113744" startY="0.47393364928909953">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.14839181303977966" green="0.17913012206554413" blue="0.7631579041481018" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="0.13414634146341464">
+                                 <color>
+                                    <Color red="0.008999999612569809" green="0.01355000026524067" blue="0.10000000149011612" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="0.008771929889917374" green="0.0135964909568429" blue="0.10526315867900848" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                     <font>
+                        <Font name="System Bold Italic" size="16.0" />
+                     </font>
+                  </Label>
+                  <VBox layoutX="28.0" layoutY="130.0" prefHeight="287.0" prefWidth="195.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="38.0" prefWidth="100.0" style="-fx-background-color: cyan; -fx-border-color: black;">
+                           <children>
+                              <Label fx:id="w1" text="&lt;No Customer&gt;" textFill="#14164d">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="38.0" prefWidth="100.0" style="-fx-background-color: cyan; -fx-border-color: black;">
+                           <children>
+                              <Label fx:id="w2" text="&lt;No Customer&gt;" textFill="#14164d">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="38.0" prefWidth="100.0" style="-fx-background-color: cyan; -fx-border-color: black;">
+                           <children>
+                              <Label fx:id="w3" text="&lt;No Customer&gt;" textFill="#14164d">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="38.0" prefWidth="100.0" style="-fx-background-color: cyan; -fx-border-color: black;">
+                           <children>
+                              <Label fx:id="w4" text="&lt;No Customer&gt;" textFill="#14164d">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="38.0" prefWidth="100.0" style="-fx-background-color: cyan; -fx-border-color: black;">
+                           <children>
+                              <Label fx:id="w5" text="&lt;No Customer&gt;" textFill="#14164d">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="38.0" prefWidth="100.0" style="-fx-background-color: cyan; -fx-border-color: black;">
+                           <children>
+                              <Label fx:id="w6" text="&lt;No Customer&gt;" textFill="#14164d">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="38.0" prefWidth="100.0" style="-fx-background-color: cyan; -fx-border-color: black;">
+                           <children>
+                              <Label fx:id="w7" text="&lt;No Customer&gt;" textFill="#14164d">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="38.0" prefWidth="100.0" style="-fx-background-color: cyan; -fx-border-color: black;">
+                           <children>
+                              <Label fx:id="w8" text="&lt;No Customer&gt;" textFill="#14164d">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="38.0" prefWidth="100.0" style="-fx-background-color: cyan; -fx-border-color: black;">
+                           <children>
+                              <Label fx:id="w9" text="&lt;No Customer&gt;" textFill="#14164d">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="38.0" prefWidth="100.0" style="-fx-background-color: cyan; -fx-border-color: black;">
+                           <children>
+                              <Label fx:id="w10" text="&lt;No Customer&gt;" textFill="#14164d">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </HBox>
+                     </children>
+                  </VBox>
+                    </children>
+                </AnchorPane>
+            </content>
+        </ScrollPane>
+        <ImageView fitHeight="120.0" fitWidth="102.0" layoutX="21.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@user.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="120.0" fitWidth="102.0" layoutX="139.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@user.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="120.0" fitWidth="102.0" layoutX="249.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@user.png" />
+            </image>
+        </ImageView>
+      <VBox layoutX="22.0" layoutY="200.0" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: wheat;">
+         <children>
+            <HBox alignment="CENTER" prefHeight="38.0" prefWidth="100.0" style="-fx-background-color: cyan; -fx-border-color: black;">
+               <children>
+                  <Label fx:id="c11" text="Unoccupied" textFill="#14164d">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </HBox>
+             <HBox alignment="CENTER" prefHeight="38.0" prefWidth="100.0" style="-fx-background-color: cyan; -fx-border-color: black;">
+               <children>
+                  <Label fx:id="c12" text="Unoccupied" textFill="#14164d">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox layoutX="140.0" layoutY="200.0" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: wheat;">
+         <children>
+             <HBox alignment="CENTER" prefHeight="38.0" prefWidth="100.0" style="-fx-background-color: cyan; -fx-border-color: black;">
+                 <children>
+                     <Label fx:id="c21" text="Unoccupied" textFill="#14164d">
+                         <font>
+                             <Font name="System Bold" size="13.0" />
+                         </font>
+                     </Label>
+                 </children>
+                 <opaqueInsets>
+                     <Insets />
+                 </opaqueInsets>
+             </HBox>
+             <HBox alignment="CENTER" prefHeight="38.0" prefWidth="100.0" style="-fx-background-color: cyan; -fx-border-color: black;">
+                 <children>
+                     <Label fx:id="c22" text="Unoccupied" textFill="#14164d">
+                         <font>
+                             <Font name="System Bold" size="13.0" />
+                         </font>
+                     </Label>
+                 </children>
+                 <opaqueInsets>
+                     <Insets />
+                 </opaqueInsets>
+             </HBox>
+             <HBox alignment="CENTER" prefHeight="38.0" prefWidth="100.0" style="-fx-background-color: cyan; -fx-border-color: black;">
+                 <children>
+                     <Label fx:id="c23" text="Unoccupied" textFill="#14164d">
+                         <font>
+                             <Font name="System Bold" size="13.0" />
+                         </font>
+                     </Label>
+                 </children>
+                 <opaqueInsets>
+                     <Insets />
+                 </opaqueInsets>
+             </HBox>
+         </children>
+      </VBox>
+      <VBox layoutX="250.0" layoutY="200.0" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: wheat;">
+         <children>
+             <HBox alignment="CENTER" prefHeight="38.0" prefWidth="100.0" style="-fx-background-color: cyan; -fx-border-color: black;">
+                 <children>
+                     <Label fx:id="c31" text="Unoccupied" textFill="#14164d">
+                         <font>
+                             <Font name="System Bold" size="13.0" />
+                         </font>
+                     </Label>
+                 </children>
+                 <opaqueInsets>
+                     <Insets />
+                 </opaqueInsets>
+             </HBox>
+             <HBox alignment="CENTER" prefHeight="38.0" prefWidth="100.0" style="-fx-background-color: cyan; -fx-border-color: black;">
+                 <children>
+                     <Label fx:id="c32" text="Unoccupied" textFill="#14164d">
+                         <font>
+                             <Font name="System Bold" size="13.0" />
+                         </font>
+                     </Label>
+                 </children>
+                 <opaqueInsets>
+                     <Insets />
+                 </opaqueInsets>
+             </HBox>
+             <HBox alignment="CENTER" prefHeight="38.0" prefWidth="100.0" style="-fx-background-color: cyan; -fx-border-color: black;">
+                 <children>
+                     <Label fx:id="c33" text="Unoccupied" textFill="#14164d">
+                         <font>
+                             <Font name="System Bold" size="13.0" />
+                         </font>
+                     </Label>
+                 </children>
+                 <opaqueInsets>
+                     <Insets />
+                 </opaqueInsets>
+             </HBox>
+             <HBox alignment="CENTER" prefHeight="38.0" prefWidth="100.0" style="-fx-background-color: cyan; -fx-border-color: black;">
+                 <children>
+                     <Label fx:id="c34" text="Unoccupied" textFill="#14164d">
+                         <font>
+                             <Font name="System Bold" size="13.0" />
+                         </font>
+                     </Label>
+                 </children>
+                 <opaqueInsets>
+                     <Insets />
+                 </opaqueInsets>
+             </HBox>
+             <HBox alignment="CENTER" prefHeight="38.0" prefWidth="100.0" style="-fx-background-color: cyan; -fx-border-color: black;">
+                 <children>
+                     <Label fx:id="c35" text="Unoccupied" textFill="#14164d">
+                         <font>
+                             <Font name="System Bold" size="13.0" />
+                         </font>
+                     </Label>
+                 </children>
+                 <opaqueInsets>
+                     <Insets />
+                 </opaqueInsets>
+             </HBox>
+         </children>
+      </VBox>
+      <Button layoutX="134.0" layoutY="407.0" mnemonicParsing="false" onAction="#updateButtonClick" style="-fx-background-color: lime; -fx-border-color: black; -fx-border-radius: 299;" text="Load Data">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" layoutX="110.0" layoutY="455.0" prefHeight="24.0" prefWidth="195.0" text="Click the Button to load data">
+         <font>
+            <Font name="Book Antiqua Bold Italic" size="14.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

@@ -1,0 +1,23 @@
+This is how Foodies Fav Queues Current Cashier Queues look like
+O   O   X   
+O   O   X   
+    X   X   
+        X   
+        X   
+O - Occupied
+X - Unoccupied
+
+
+
+
+Currently 26 burgers in Stock
+
+
+
+
+Customer Names View
+ WE WE rt ff
+ r r io f
+
+
+
